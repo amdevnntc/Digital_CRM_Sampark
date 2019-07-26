@@ -1,0 +1,27 @@
+1:Creation of Location as Dynamic that should come dynamically from from database 
+  like this locality should change which will be mapped thrugh Location
+   Like if we select Delhi Location then all Locality should come AutoMatically
+   we have to Perform one To Many Mapping 
+   
+      for this 2 entity classes 
+         1  LocationEntity
+            2 LocalityEntity  
+   
+   
+   CREATE TABLE city_master(  
+   city_id INT  ,  
+   city_code VARCHAR(100) ,  
+   city_Name VARCHAR(100) ,  
+   PRIMARY KEY ( city_id )  
+);  
+
+
+
+CREATE TABLE locality_master(  
+   locality_id INT  ,  
+   city_id INT  ,
+   Locality_Name VARCHAR(100) ,  
+   PRIMARY KEY ( locality_id )  
+);  
+
+
